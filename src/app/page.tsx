@@ -77,10 +77,10 @@ export default function HomePage() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
       <header className="absolute top-0 w-full p-6 flex justify-between items-center z-10">
-        <div className="text-left">
+        <button onClick={handleReset} className="text-left transition-opacity hover:opacity-80">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tighter text-primary">rebote</h1>
-          <p className="text-sm text-muted-foreground">~ replay instantâneo para suas jogadas.</p>
-        </div>
+          <p className="text-sm text-muted-foreground">replay instantâneo para suas jogadas.</p>
+        </button>
         
         <Sheet>
           <SheetTrigger asChild>
